@@ -24,6 +24,12 @@ To be able to send emails, you will also need a Gmail account (better to create 
 
 Now you can open a terminal and launch the setup script by typing "sudo bash setup.sh", this will take some hours so be patient
 
+Remember to activate the pi camera!
+- open a terminal
+- type sudo raspi-config
+- go to interface options
+- go to camera and enable it
+
 ### Script instructions
 
 SurveillancePI, program created by David Forino AI Solutions
