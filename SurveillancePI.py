@@ -24,7 +24,7 @@ def send_notification(image):
     password = ""  # insert your 16 alphanumeric characters Google password inside the quotes
 
     # convert image to bytes and attach it as message
-    byte_image = cv2.imencode(".jpg", cv2.cvtColor(image, cv2.COLOR_BGR2RGB))[1].tobytes()
+    byte_image = cv2.imencode(".jpg", image)[1].tobytes()
     msg = MIMEMultipart()
     msg.attach(MIMEImage(byte_image))
 
