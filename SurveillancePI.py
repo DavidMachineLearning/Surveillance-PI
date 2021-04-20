@@ -112,7 +112,7 @@ while True:
     # Compare frames
     deltaframe = cv2.absdiff(bg_frame, frame)
 
-    # Thresholding and dilation
+    # Thresholding
     thresholded = cv2.threshold(deltaframe, args.threshold, 255, cv2.THRESH_BINARY)[1]
 
     # draw bounding boxes
